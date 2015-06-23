@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:background="#ff6cbd45" >
+
+        <TextView
+            android:id="@+id/tv_main_title"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="常 用 号 码"
+            android:textColor="#ffffff"
+            android:textSize="18.0dip" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip" >
+
+        <ImageView
+            android:id="@+id/iv_main_logo"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/shenma" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dip"
+            android:layout_toLeftOf="@id/iv_main_logo"
+            android:text="点击就可以拨打电话了"
+            android:textColor="#88000000"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <ExpandableListView
+        android:id="@+id/elv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </ExpandableListView>
+
+</LinearLayout>

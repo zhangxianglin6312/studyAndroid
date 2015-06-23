@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:background="#ff6cbd45" >
+
+        <TextView
+            style="@style/text_title_style"
+            android:text="4.恭喜你设置完成" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/text_content_style"
+        android:layout_marginLeft="5dip"
+        android:text="强烈建议您开启防盗保护" />
+
+    <TextView
+        android:onClick="activeDeviceAdmin"
+        android:clickable="true"
+        style="@style/text_content_style"
+        android:layout_marginLeft="5dip"
+        android:text="点击开启设备的超级管理员权限\n(开启后可以远程锁屏,远程清空数据)" />
+
+    <CheckBox
+        android:id="@+id/cb_setup4_status"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="防盗保护没有开启" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="8dip"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <ImageView style="@style/image_off_style" />
+
+        <ImageView style="@style/image_off_style" />
+
+        <ImageView style="@style/image_off_style" />
+
+        <ImageView style="@style/image_on_style" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="center"
+            android:src="@drawable/bind" />
+
+        <Button
+            style="@style/bt_next_style"
+            android:onClick="next"
+            android:text="设置完成" />
+
+        <Button
+            style="@style/bt_pre_style"
+            android:onClick="pre" />
+    </RelativeLayout>
+
+</LinearLayout>
